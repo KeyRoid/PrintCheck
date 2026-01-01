@@ -1,0 +1,143 @@
+<!-- terms.html -->
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>DelayCalc - Terms of Service</title>
+  <style>
+    :root{
+      --bg:#000; --border:#1a1a1a;
+      --text:#e8e8e8; --muted:#a7a7a7; --accent:#00ffff;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;
+      background: radial-gradient(1100px 700px at 80% 20%, rgba(0,255,255,.10), transparent 60%), var(--bg);
+      color:var(--text);
+    }
+    header{position:sticky;top:0;background:rgba(0,0,0,.85);backdrop-filter: blur(10px);border-bottom:1px solid var(--border)}
+    .wrap{max-width:900px;margin:0 auto;padding:16px}
+    .top{display:flex;justify-content:space-between;align-items:center;gap:10px}
+    a{color:var(--accent);text-decoration:none}
+    .lang button{
+      cursor:pointer;border:1px solid var(--border);background:rgba(255,255,255,.03);
+      color:var(--text);padding:8px 10px;border-radius:10px;font-weight:700;font-size:12px;
+    }
+    .lang button[aria-pressed="true"]{border-color:rgba(0,255,255,.55);color:var(--accent)}
+    .card{
+      max-width:900px;margin:18px auto 40px;padding:18px;
+      border:1px solid var(--border);border-radius:18px;
+      background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
+    }
+    h1{margin:0 0 6px;font-size:18px}
+    h2{margin:18px 0 8px;font-size:14px}
+    p,li{color:var(--muted);line-height:1.75;font-size:13px}
+    ul{margin:8px 0 0 18px}
+    .meta{font-size:12px;color:var(--muted)}
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="top">
+      <div>
+        <div class="meta"><a href="./index.html">← Index</a></div>
+        <h1>DelayCalc - Terms of Service</h1>
+        <div class="meta" id="updated"></div>
+      </div>
+      <div class="lang" role="group" aria-label="Language switch">
+        <button id="btnJa" type="button" aria-pressed="true">日本語</button>
+        <button id="btnEn" type="button" aria-pressed="false">English</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="card">
+    <div id="t_ja">
+      <p>本利用規約（以下「本規約」）は、DelayCalc（以下「本アプリ」）の利用条件を定めるものです。</p>
+
+      <h2>1. 提供内容</h2>
+      <p>本アプリは、BPMからディレイタイム（ms）および周波数（Hz）等を算出する計算ツールです。</p>
+
+      <h2>2. 禁止事項</h2>
+      <p>利用者は、以下の行為を行ってはなりません。</p>
+      <ul>
+        <li>法令または公序良俗に違反する行為</li>
+        <li>本アプリの運営を妨害する行為（リバースエンジニアリング等を含む）</li>
+        <li>第三者の権利（著作権、商標権等）を侵害する行為</li>
+      </ul>
+
+      <h2>3. 免責</h2>
+      <p>本アプリは現状有姿で提供されます。開発者は、本アプリの正確性、完全性、特定目的適合性等について保証しません。</p>
+      <p>本アプリの利用により生じた損害について、開発者は一切の責任を負いません。ただし、適用法令により免責が認められない場合を除きます。</p>
+
+      <h2>4. 変更・提供停止</h2>
+      <p>開発者は、必要に応じて本アプリの内容を変更し、または提供を停止することがあります。</p>
+
+      <h2>5. 規約の変更</h2>
+      <p>開発者は、必要に応じて本規約を変更できます。変更後の規約は、本ページに掲示した時点で効力を生じます。</p>
+
+      <h2>6. 準拠法・管轄</h2>
+      <p>本規約は日本法を準拠法とし、本アプリに関連して紛争が生じた場合、開発者所在地を管轄する裁判所を第一審の専属的合意管轄裁判所とします。</p>
+    </div>
+
+    <div id="t_en" style="display:none">
+      <p>These Terms of Service (“Terms”) govern your use of DelayCalc (the “App”).</p>
+
+      <h2>1. Service Description</h2>
+      <p>The App provides calculation utilities (e.g., BPM to delay time in ms and frequency in Hz).</p>
+
+      <h2>2. Prohibited Conduct</h2>
+      <p>You must not:</p>
+      <ul>
+        <li>Violate laws or regulations</li>
+        <li>Interfere with the operation of the App (including reverse engineering)</li>
+        <li>Infringe third-party rights (copyrights, trademarks, etc.)</li>
+      </ul>
+
+      <h2>3. Disclaimer</h2>
+      <p>The App is provided “as is.” The developer makes no warranties regarding accuracy, completeness, or fitness for a particular purpose.</p>
+      <p>To the maximum extent permitted by law, the developer is not liable for damages arising from use of the App.</p>
+
+      <h2>4. Changes / Discontinuation</h2>
+      <p>The developer may modify or discontinue the App at any time as needed.</p>
+
+      <h2>5. Changes to Terms</h2>
+      <p>The developer may update these Terms. Updated Terms become effective when posted on this page.</p>
+
+      <h2>6. Governing Law / Jurisdiction</h2>
+      <p>These Terms are governed by the laws of Japan. Any disputes shall be subject to the exclusive jurisdiction of the court having jurisdiction over the developer’s location, unless otherwise required by applicable law.</p>
+    </div>
+  </div>
+</main>
+
+<script>
+  const btnJa = document.getElementById('btnJa');
+  const btnEn = document.getElementById('btnEn');
+  const ja = document.getElementById('t_ja');
+  const en = document.getElementById('t_en');
+  const updated = document.getElementById('updated');
+  const LAST_UPDATED = '2026-01-01';
+
+  function setLang(lang){
+    const isJa = lang === 'ja';
+    ja.style.display = isJa ? 'block' : 'none';
+    en.style.display = isJa ? 'none' : 'block';
+    btnJa.setAttribute('aria-pressed', String(isJa));
+    btnEn.setAttribute('aria-pressed', String(!isJa));
+    localStorage.setItem('lang', lang);
+    document.documentElement.lang = isJa ? 'ja' : 'en';
+    updated.textContent = isJa ? `最終更新日: ${LAST_UPDATED}` : `Last updated: ${LAST_UPDATED}`;
+  }
+
+  btnJa.addEventListener('click', () => setLang('ja'));
+  btnEn.addEventListener('click', () => setLang('en'));
+  const saved = localStorage.getItem('lang');
+  setLang(saved === 'en' ? 'en' : 'ja');
+</script>
+</body>
+</html>
