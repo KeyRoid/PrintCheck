@@ -1,0 +1,197 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>DelayCalc - Legal</title>
+  <meta name="description" content="DelayCalc legal pages: Privacy Policy, Terms of Service, Specified Commercial Transactions Act." />
+  <style>
+    :root{
+      --bg:#000000;
+      --panel:#0b0b0b;
+      --border:#1a1a1a;
+      --text:#e8e8e8;
+      --muted:#a7a7a7;
+      --accent:#00ffff;
+      --accent2:#ffbf00;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      background: radial-gradient(1200px 800px at 20% 10%, rgba(0,255,255,.10), transparent 60%),
+                  radial-gradient(1000px 700px at 90% 40%, rgba(255,191,0,.08), transparent 55%),
+                  var(--bg);
+      color:var(--text);
+    }
+    header{
+      position:sticky; top:0;
+      background: linear-gradient(180deg, rgba(0,0,0,.90), rgba(0,0,0,.70));
+      backdrop-filter: blur(10px);
+      border-bottom:1px solid var(--border);
+      z-index:10;
+    }
+    .wrap{max-width:900px;margin:0 auto;padding:18px 16px}
+    .topbar{display:flex;align-items:center;gap:12px;justify-content:space-between}
+    .brand{
+      display:flex;align-items:baseline;gap:10px;
+      letter-spacing:.5px;
+    }
+    .brand h1{margin:0;font-size:18px}
+    .badge{
+      font-size:12px;color:var(--muted);
+      border:1px solid var(--border);
+      padding:4px 8px;border-radius:999px;
+      background:rgba(255,255,255,.03);
+    }
+    .lang{
+      display:flex;gap:8px;align-items:center;
+    }
+    .lang button{
+      cursor:pointer;
+      border:1px solid var(--border);
+      background:rgba(255,255,255,.03);
+      color:var(--text);
+      padding:8px 10px;border-radius:10px;
+      font-weight:600;font-size:12px;
+    }
+    .lang button[aria-pressed="true"]{
+      border-color:rgba(0,255,255,.55);
+      box-shadow: 0 0 0 2px rgba(0,255,255,.15) inset;
+      color: var(--accent);
+    }
+    main{padding:18px 16px 40px}
+    .card{
+      max-width:900px;margin:0 auto;
+      background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
+      border:1px solid var(--border);
+      border-radius:18px;
+      padding:18px;
+    }
+    .lead{color:var(--muted);line-height:1.7;margin:8px 0 16px}
+    .grid{
+      display:grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap:12px;
+      margin-top:14px;
+    }
+    a.tile{
+      display:block;
+      text-decoration:none;
+      border:1px solid var(--border);
+      border-radius:16px;
+      padding:14px 14px 12px;
+      background: rgba(0,0,0,.35);
+      transition: transform .08s ease, border-color .12s ease, box-shadow .12s ease;
+    }
+    a.tile:hover{
+      transform: translateY(-1px);
+      border-color: rgba(0,255,255,.40);
+      box-shadow: 0 10px 30px rgba(0,255,255,.06);
+    }
+    .tile h2{margin:0 0 6px;font-size:14px}
+    .tile p{margin:0;color:var(--muted);font-size:12px;line-height:1.6}
+    footer{max-width:900px;margin:14px auto 0;color:var(--muted);font-size:12px;padding:0 16px}
+    code{color:var(--accent2)}
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="topbar">
+      <div class="brand">
+        <h1>DelayCalc</h1>
+        <span class="badge" id="subtitle">Legal / Policies</span>
+      </div>
+      <div class="lang" role="group" aria-label="Language switch">
+        <button id="btnJa" type="button" aria-pressed="true">日本語</button>
+        <button id="btnEn" type="button" aria-pressed="false">English</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="card">
+    <div id="t_ja">
+      <p class="lead">
+        本ページは <code>DelayCalc</code> の規約・ポリシーの一覧です。アプリはオフラインで動作し、個人情報の収集やサーバー送信は行いません。
+      </p>
+      <div class="grid">
+        <a class="tile" href="./privacy.html">
+          <h2>プライバシーポリシー</h2>
+          <p>収集する情報／しない情報、第三者提供、問い合わせ窓口。</p>
+        </a>
+        <a class="tile" href="./terms.html">
+          <h2>利用規約</h2>
+          <p>提供条件、免責、禁止事項、準拠法など。</p>
+        </a>
+        <a class="tile" href="./tokushoho.html">
+          <h2>特定商取引法に基づく表記</h2>
+          <p>販売事業者、販売価格、支払い方法、返金等。</p>
+        </a>
+      </div>
+      <p class="lead" style="margin-top:14px;">
+        ※アプリ内から開く場合はブラウザが起動します。<br>
+        ※表記内容は必要に応じて更新されます。
+      </p>
+    </div>
+
+    <div id="t_en" style="display:none">
+      <p class="lead">
+        This page lists legal documents for <code>DelayCalc</code>. The app works offline and does not collect personal data or send data to servers.
+      </p>
+      <div class="grid">
+        <a class="tile" href="./privacy.html">
+          <h2>Privacy Policy</h2>
+          <p>What we collect / do not collect, third-party sharing, contact.</p>
+        </a>
+        <a class="tile" href="./terms.html">
+          <h2>Terms of Service</h2>
+          <p>Terms of use, disclaimers, prohibited acts, governing law.</p>
+        </a>
+        <a class="tile" href="./tokushoho.html">
+          <h2>Specified Commercial Transactions Act (Japan)</h2>
+          <p>Seller info, price, payment, refunds (for Japan).</p>
+        </a>
+      </div>
+      <p class="lead" style="margin-top:14px;">
+        Note: Opening from the app will launch the system browser.<br>
+        Content may be updated as needed.
+      </p>
+    </div>
+  </div>
+
+  <footer>
+    <div>© <span id="year"></span> DelayCalc</div>
+  </footer>
+</main>
+
+<script>
+  const btnJa = document.getElementById('btnJa');
+  const btnEn = document.getElementById('btnEn');
+  const ja = document.getElementById('t_ja');
+  const en = document.getElementById('t_en');
+  const year = document.getElementById('year');
+
+  year.textContent = new Date().getFullYear();
+
+  function setLang(lang){
+    const isJa = lang === 'ja';
+    ja.style.display = isJa ? 'block' : 'none';
+    en.style.display = isJa ? 'none' : 'block';
+    btnJa.setAttribute('aria-pressed', String(isJa));
+    btnEn.setAttribute('aria-pressed', String(!isJa));
+    localStorage.setItem('lang', lang);
+    document.documentElement.lang = isJa ? 'ja' : 'en';
+  }
+
+  btnJa.addEventListener('click', () => setLang('ja'));
+  btnEn.addEventListener('click', () => setLang('en'));
+
+  const saved = localStorage.getItem('lang');
+  setLang(saved === 'en' ? 'en' : 'ja');
+</script>
+</body>
+</html>
